@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>Exercício 8</h1>
+            <h2>Apresentando os salários de acordo com as entradas</h2>
+            <script type="text/javascript">
+                var nome = prompt("Digite o nome do funcionário");
+                var salario = parseFloat(prompt("Digite o salário do " + nome));
+                var depto = prompt("Digite E para Engenharia e P para produção")
+                if((salario >= 1000) && (salario<=1500)){
+                    if((depto=="E") || (depto=="P")){
+                        document.write("<h3>Nome: " + nome + "</h3>");
+                        if((depto=="E")){
+                            nomedp= "Engenharia";
+                        }else{
+                            nomedp= "Produção";
+                        }
+                        document.write("<h3>Departamento: " + nomedp + "</h3>");
+                        document.write("<h3>Salário: " + salario + "</h3>");
+                    } else {
+                        document.write("<h3>Apesar do salário não trabalha nos departamentos</h3>");
+                    }
+                }else{
+                    document.write("<h3>Funcionário não responde aos critérios pedidos</h3>");
+                }
+            </script>
+    </div>
+    </body>
+</html>
